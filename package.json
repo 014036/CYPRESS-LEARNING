@@ -1,6 +1,7 @@
 {
   "devDependencies": {
-    "cypress": "^13.5.0"
+    "cypress": "^13.5.0",
+    "cypress-xpath": "^2.0.1"
   },
   "name": "cypress",
   "description": "![Alt text](<foto - Kopya.jpg>)\r @MustafaAkin",
