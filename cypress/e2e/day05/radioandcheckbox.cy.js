@@ -39,6 +39,22 @@ it('Check Box test', ()=>{
     cy.get('#hondacheck').check().should('be.checked')
     cy.get('#benzcheck').should('be.checked')
     cy.get('#bmwcheck').should('be.checked')
+
+
+    //TIKLAMALARI KALDIRMAK ICIN
+    cy.get('#hondacheck').uncheck().should('not.be.checked')
+    cy.get('#benzcheck').uncheck().should('not.be.checked')
+    cy.get('#bmwcheck').uncheck().should('not.be.checked')
+
+
+    //hepsini birlikte tiklamak icin butun elementlerin ortak ogeleriyle locatelerini al
+    cy.get("input[name='cars'][type='checkbox']").check().should('be.checked');
+
+    //eger sadece ilk elemente tiklamak istiyorsak
+    cy.get("input[name='cars'][type='checkbox']").first().check().should('be.checked');
+
+    //eger sadece son elemente tiklamak istiyorsak
+    cy.get("input[name='cars'][type='checkbox']").last().check().should('be.checked');
 })
 
 

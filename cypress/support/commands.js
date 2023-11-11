@@ -25,4 +25,4 @@
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
 ///<reference types="cypress"/>
-///<reference types="cypress-xpath"/>
+/// <reference types="cypress-xpath"/>
