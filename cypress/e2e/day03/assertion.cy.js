@@ -37,7 +37,8 @@ it('Explicit Assertion', function(){
 
     cy.get('#edit-form > :nth-child(2)').then(function(x){
         let actualName=x.text()
-        
+        // assert.equal(expName, actualName)   
+       
 
     })
 })
