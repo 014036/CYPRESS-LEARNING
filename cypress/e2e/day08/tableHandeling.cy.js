@@ -63,7 +63,7 @@ describe("tableHandling", () => {
     
     
     it.only("Pagination2", () => {
-      let totalPages = 20;
+      let totalPages = 25;
   
       for (let i = 1; i <= totalPages; i++) {
   
@@ -72,7 +72,7 @@ describe("tableHandling", () => {
             cy.get('[class="pagination"]>li:nth-child(10)').click();
           }
           if(i>2){
-            cy.get('[class="pagination"]>li:nth-child(12)').click();
+            cy.get(':nth-child(12) > .page-link').click();
           }
           
 
@@ -88,4 +88,7 @@ describe("tableHandling", () => {
            
          }
     });
+  
+  
+  
   });
