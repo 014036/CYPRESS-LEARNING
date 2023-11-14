@@ -63,7 +63,7 @@ describe("tableHandling", () => {
     
     
     it.only("Pagination2", () => {
-      let totalPages = 25;
+      let totalPages = 45;
   
       for (let i = 1; i <= totalPages; i++) {
   
@@ -74,7 +74,7 @@ describe("tableHandling", () => {
           if(i>2){
             cy.get(':nth-child(12) > .page-link').click();
           }
-          
+          cy.wait(3000);
 
             cy.get('[class="table table-bordered table-hover"]>tbody>tr').each(
             ($row, index, $rows) => {
