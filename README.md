@@ -1,4 +1,4 @@
-![Alt text](<foto - Kopya.jpg>)
+![Alt text](<img/fotoKopya.jpg>)
 @MustafaAkin
 
 # LEARNING CYPRESS
